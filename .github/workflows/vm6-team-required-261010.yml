@@ -1,0 +1,12 @@
+name: VM6 Team Queue Native Status 261010
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  scope-confirm:
+    name: vm6-neverteam-required
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check controlled workflow runs without privileged token
+        run: echo VM6_PROTECTED_QUEUE_PASS_261010
